@@ -70,9 +70,12 @@ rule teslacrypt
 
 	condition:
 
+		// Checking that the file is a windows executable and includes the listed dlls
+
 		$magic_bytes at 0 and ($kernel32 and $advapi32 and $ntdll and $ws2_32 and $wininet) and 
 
 		(
+			// Checking for strings relating to communication method, recovery/ransom note, encryption file extension and .onion for bitcoin TOR links
 
 			2 of (
 
