@@ -1,5 +1,3 @@
-# tesla_yara
-Yara rule for detecting teslacrypt version 3.0.1 and similar samples using the same TTP techniques.
 The rule has been designed to detect the unpacked version of the malware- therefore the rule will not work on the packed version MSUpdate.exe.
 Comments for each line are either above, or at the end of the line.
 Comments include
